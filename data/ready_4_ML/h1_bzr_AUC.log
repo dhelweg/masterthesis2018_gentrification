@@ -1,0 +1,31 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 2 -stddev-width 2 -sig-width 1 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  Area_under_ROC
+Datasets:   1
+Resultsets: 13
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       13.09.18 21:59
+
+
+Dataset                   (2) trees.R | (1) rule (3) tree (4) tree (5) tree (6) tree (7) meta (8) meta (9) func (10) fun (11) bay (12) bay (13) fun
+---------------------------------------------------------------------------------------------------------------------------------------------------
+'20180909_h1_bzr-weka.fil(100)   0.84 |   0.50 *   0.85     0.84     0.83     0.85     0.78     0.77     0.84     0.86     0.79     0.71 *   0.74 *
+---------------------------------------------------------------------------------------------------------------------------------------------------
+                              (v/ /*) |  (0/0/1)  (0/1/0)  (0/1/0)  (0/1/0)  (0/1/0)  (0/1/0)  (0/1/0)  (0/1/0)  (0/1/0)  (0/1/0)  (0/0/1)  (0/0/1)
+
+
+Key:
+(1) rules.ZeroR '' 48055541465867954
+(2) trees.RandomForest '-P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1' 1116839470751428698
+(3) trees.RandomForest '-P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1 -depth 5' 1116839470751428698
+(4) trees.RandomForest '-P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1 -depth 3' 1116839470751428698
+(5) trees.LMT '-I -1 -M 15 -W 0.0' -1113212459618104943
+(6) trees.LMT '-I 3 -M 15 -W 0.0' -1113212459618104943
+(7) meta.AdaBoostM1 '-P 100 -S 1 -I 10 -W trees.DecisionStump' -1178107808933117974
+(8) meta.LogitBoost '-P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W trees.DecisionStump' -1105660358715833753
+(9) functions.SimpleLogistic '-I 0 -M 500 -H 50 -W 0.0' 7397710626304705059
+(10) functions.SimpleLogistic '-I 3 -M 500 -H 50 -W 0.0' 7397710626304705059
+(11) bayes.BayesNet '-D -Q bayes.net.search.local.K2 -- -P 1 -S BAYES -E bayes.net.estimate.SimpleEstimator -- -A 0.5' 746037443258775954
+(12) bayes.NaiveBayes '' 5995231201785697655
+(13) functions.MultilayerPerceptron '-L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -5990607817048210779
+
