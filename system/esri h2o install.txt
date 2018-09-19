@@ -1,0 +1,86 @@
+##start h20:
+cd h2o-3.18.0.3-*
+hadoop jar h2odriver.jar -nodes 1 -mapperXmx 1g -output hdfsOutputDirName
+
+##download esri
+##wget https://github.com/Esri/geometry-api-java/releases/download/v2.0.0/esri-geometry-api-2.0.0.jar
+hadoop jar esri-geometry-api-2.0.0.jar -nodes 1 -mapperXmx 1g -output hdfsOutputDirName
+
+hadoop fs -put esri-geometry-api-2.0.0.jar /user/esri
+hadoop fs -put target/esri-geometry-api-2.0.0.jar /user/esri
+
+
+
+add jar hdfs:///user/esri/spatial-sdk-hive-2.1.0-SNAPSHOT.jar; 
+add jar hdfs:///user/esri/spatial-sdk-json-2.1.0-SNAPSHOT.jar; 
+add jar hdfs:///user/esri/esri-geometry-api-2.0.0.jar;
+
+
+sudo su - hdfs
+hdfs dfs -chmod a=rwx '/apps/hive/warehouse/geo_gentrification.db'
+hdfs dfs -chmod a=rwx '/user/admin/dhelweg/'
+hdfs dfs -mkdir '/user/dhelweg/'
+hdfs dfs -chmod a=rwx '/user/dhelweg/'
+
+## OSM2Hive
+add jar hdfs:///user/esri/OSM2Hive.jar;
+add jar hdfs://itfin105.it.zeb.de:8280/user/admin/dhelweg/OSM2Hive.jar;
+
+CREATE TEMPORARY FUNCTION OSMImportNodes AS 'info.pavie.osm2hive.controller.HiveNodeImporter';
+CREATE TEMPORARY FUNCTION OSMImportWays AS 'info.pavie.osm2hive.controller.HiveWayImporter';
+CREATE TEMPORARY FUNCTION OSMImportRelations AS 'info.pavie.osm2hive.controller.HiveRelationImporter';
+
+
+DROP TABLE IF EXISTS osmdata;
+CREATE TABLE osmdata(osm_content STRING) STORED AS TEXTFILE;
+LOAD DATA INPATH '/user/sandbox/filtered_latest.osm' OVERWRITE INTO TABLE osmdata;
+CREATE TABLE osmnodes_filtered_latest AS SELECT OSMImportNodes(osm_content) FROM osmdata;
+DROP TABLE IF EXISTS osmdata;
+CREATE TABLE osmdata(osm_content STRING) STORED AS TEXTFILE;
+LOAD DATA INPATH '/user/sandbox/filtered_140101.osm' OVERWRITE INTO TABLE osmdata;
+CREATE TABLE osmnodes_filtered_140101 AS SELECT OSMImportNodes(osm_content) FROM osmdata;
+DROP TABLE IF EXISTS osmdata;
+CREATE TABLE osmdata(osm_content STRING) STORED AS TEXTFILE;
+LOAD DATA INPATH '/user/sandbox/filtered_150101.osm' OVERWRITE INTO TABLE osmdata;
+CREATE TABLE osmnodes_filtered_150101 AS SELECT OSMImportNodes(osm_content) FROM osmdata;
+DROP TABLE IF EXISTS osmdata;
+CREATE TABLE osmdata(osm_content STRING) STORED AS TEXTFILE;
+LOAD DATA INPATH '/user/sandbox/filtered_160101.osm' OVERWRITE INTO TABLE osmdata;
+CREATE TABLE osmnodes_filtered_160101 AS SELECT OSMImportNodes(osm_content) FROM osmdata;
+DROP TABLE IF EXISTS osmdata;
+CREATE TABLE osmdata(osm_content STRING) STORED AS TEXTFILE;
+LOAD DATA INPATH '/user/sandbox/filtered_170101.osm' OVERWRITE INTO TABLE osmdata;
+CREATE TABLE osmnodes_filtered_170101 AS SELECT OSMImportNodes(osm_content) FROM osmdata;
+DROP TABLE IF EXISTS osmdata;
+CREATE TABLE osmdata(osm_content STRING) STORED AS TEXTFILE;
+LOAD DATA INPATH '/user/sandbox/filtered_180101.osm' OVERWRITE INTO TABLE osmdata;
+CREATE TABLE osmnodes_filtered_180101 AS SELECT OSMImportNodes(osm_content) FROM osmdata;
+
+
+#lormapper
+add jar hdfs:///user/esri/original-hive.udf.lormapper-0.0.1-SNAPSHOT.jar;
+CREATE TEMPORARY FUNCTION Prognoseraum AS 'de.zeb.hive.udf.lormapper.Prognoseraum';
+CREATE TEMPORARY FUNCTION Bezirksregion AS 'de.zeb.hive.udf.lormapper.Bezirksregion';
+CREATE TEMPORARY FUNCTION Planungsraum AS 'de.zeb.hive.udf.lormapper.Planungsraum';
+
+SELECT id, userid, latitude, longitude, Planungsraum(concat(latitude,", ",longitude)) FROM osmnodes where id = "N16541597";
+
+
+CREATE FUNCTION Planungsraum AS 'de.zeb.hive.udf.lormapper.Planungsraum';
+
+add jar hdfs:///user/esri/lormapper_run1b.jar;
+statement.execute("CREATE TEMPORARY FUNCTION Planungsraum AS 'de.zeb.hive.udf.lormapper.Planungsraum';");
+
+
+
+#brickhouse
+hadoop fs -put brickhouse-0.7.1-SNAPSHOT.jar /user/admin/dhelweg
+sudo su - hdfs
+hdfs dfs -chmod a=rwx '/user/admin/dhelweg/brickhouse-0.7.1-SNAPSHOT.jar'
+
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export JAVA_HOME=/usr/jdk64/jdk1.8.0_60
+export PATH=$JAVA_HOME/bin:$PATH
+
+

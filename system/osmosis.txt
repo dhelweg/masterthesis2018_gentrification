@@ -1,0 +1,66 @@
+cd C:\dev\master\osmosis\bin
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="tourism" --write-xml "C:\dev\master\files Berlin\result\tourism-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="tourism" --write-xml "C:\dev\master\files Berlin\result\tourism-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="tourism" --write-xml "C:\dev\master\files Berlin\result\tourism-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="tourism" --write-xml "C:\dev\master\files Berlin\result\tourism-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="tourism" --write-xml "C:\dev\master\files Berlin\result\tourism-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="tourism" --write-xml "C:\dev\master\files Berlin\result\tourism-180101.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="sport" --write-xml "C:\dev\master\files Berlin\result\sport-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="sport" --write-xml "C:\dev\master\files Berlin\result\sport-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="sport" --write-xml "C:\dev\master\files Berlin\result\sport-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="sport" --write-xml "C:\dev\master\files Berlin\result\sport-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="sport" --write-xml "C:\dev\master\files Berlin\result\sport-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="sport" --write-xml "C:\dev\master\files Berlin\result\sport-180101.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="leisure" --write-xml "C:\dev\master\files Berlin\result\leisure-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="leisure" --write-xml "C:\dev\master\files Berlin\result\leisure-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="leisure" --write-xml "C:\dev\master\files Berlin\result\leisure-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="leisure" --write-xml "C:\dev\master\files Berlin\result\leisure-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="leisure" --write-xml "C:\dev\master\files Berlin\result\leisure-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="leisure" --write-xml "C:\dev\master\files Berlin\result\leisure-180101.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="shop" --write-xml "C:\dev\master\files Berlin\result\shop-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="shop" --write-xml "C:\dev\master\files Berlin\result\shop-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="shop" --write-xml "C:\dev\master\files Berlin\result\shop-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="shop" --write-xml "C:\dev\master\files Berlin\result\shop-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="shop" --write-xml "C:\dev\master\files Berlin\result\shop-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="shop" --write-xml "C:\dev\master\files Berlin\result\shop-180101.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="amenity" --write-xml "C:\dev\master\files Berlin\result\amenity-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="amenity" --write-xml "C:\dev\master\files Berlin\result\amenity-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="amenity" --write-xml "C:\dev\master\files Berlin\result\amenity-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="amenity" --write-xml "C:\dev\master\files Berlin\result\amenity-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="amenity" --write-xml "C:\dev\master\files Berlin\result\amenity-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="amenity" --write-xml "C:\dev\master\files Berlin\result\amenity-180101.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="office" --write-xml "C:\dev\master\files Berlin\result\office-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="office" --write-xml "C:\dev\master\files Berlin\result\office-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="office" --write-xml "C:\dev\master\files Berlin\result\office-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="office" --write-xml "C:\dev\master\files Berlin\result\office-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="office" --write-xml "C:\dev\master\files Berlin\result\office-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="office" --write-xml "C:\dev\master\files Berlin\result\office-180101.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-180101.osm"
+
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --tf accept-nodes --tf reject-ways --tf reject-relations --write-xml "C:\dev\master\files Berlin\result\latest.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key-value keyValueList="amenity.cafe" --write-xml "C:\dev\master\files Berlin\result\amenity-cafe-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key-value keyValueList="amenity.fast_food" --write-xml "C:\dev\master\files Berlin\result\amenity-fast_food-latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key-value keyValueList="amenity.restaurant" --write-xml "C:\dev\master\files Berlin\result\amenity-restaurant-latest.osm"
+
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="public_transport" --write-xml "C:\dev\master\files Berlin\result\public_transport-latest.osm"
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop" --write-xml "C:\dev\master\files Berlin\result\filtered_latest.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-140101.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop" --write-xml "C:\dev\master\files Berlin\result\filtered_140101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-150101.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop" --write-xml "C:\dev\master\files Berlin\result\filtered_150101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-160101.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop" --write-xml "C:\dev\master\files Berlin\result\filtered_160101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-170101.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop" --write-xml "C:\dev\master\files Berlin\result\filtered_170101.osm"
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-180101.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop" --write-xml "C:\dev\master\files Berlin\result\filtered_180101.osm"

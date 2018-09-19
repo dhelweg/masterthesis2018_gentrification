@@ -1,0 +1,25 @@
+weka anleitung:
+
+1. einladen
+2. outlier detection:
+	filter: InterquartileRange auf d_*_stock (74-86)
+3. outlier und extreme values entfernen
+	filter: RemoveWithValues - 532 (Outlier):last & 533 (Exteme Values):last
+4. attribute auswählen (+invert +remove): 
+	status: "_u1.*stock" + zielgröße
+	dynamik: "_u1.*ytd" + zielgröße
+5. normalisieren
+	filter: Normalize
+
+	
+	
+	
+	------
+	libgen.io
+	
+	
+1. einladen
+2. remove 
+	h2: 1,3,7-21,24-89
+3. pattern remove 
+	r.prev_oa.*

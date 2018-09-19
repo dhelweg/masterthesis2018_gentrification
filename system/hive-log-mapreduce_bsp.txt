@@ -1,0 +1,38 @@
+NFO : Session is already open
+INFO : Dag name: create table result_full_distcalc_plr ..."0"(Stage-1)
+INFO : Tez session was closed. Reopening...
+INFO : Session re-established.
+INFO : 
+
+INFO : Status: Running (Executing on YARN cluster with App id application_1535980203532_0075)
+
+INFO : Map 1: -/-	Map 10: -/-	Map 12: -/-	Map 13: -/-	Map 14: -/-	Map 3: -/-	Map 4: -/-	Map 6: -/-	Map 7: -/-	Map 9: -/-	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0/1	Map 10: -/-	Map 12: 0/1	Map 13: -/-	Map 14: 0/1	Map 3: 0/1	Map 4: -/-	Map 6: -/-	Map 7: -/-	Map 9: -/-	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0/1	Map 10: 0/1	Map 12: 0/1	Map 13: -/-	Map 14: 0/1	Map 3: 0/1	Map 4: 0/1	Map 6: 0/1	Map 7: 0/1	Map 9: 0/1 Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0/1	Map 10: 0/1	Map 12: 0/1	Map 13: 0/1	Map 14: 0/1	Map 3: 0/1	Map 4: 0/1	Map 6: 0/1	Map 7: 0/1	Map 9: 0/1 Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0/1	Map 10: 0/1	Map 12: 0/1	Map 13: 0/1	Map 14: 0/1	Map 3: 0/1	Map 4: 0/1	Map 6: 0/1	Map 7: 0/1	Map 9: 0/1 Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0/1	Map 10: 0/1	Map 12: 0(+1)/1	Map 13: 0/1	Map 14: 0/1	Map 3: 0/1	Map 4: 0/1	Map 6: 0/1	Map 7: 0/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0(+1)/1	Map 10: 0/1	Map 12: 0(+1)/1	Map 13: 0/1	Map 14: 0/1	Map 3: 0/1	Map 4: 0/1	Map 6: 0/1	Map 7: 0/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0(+1)/1	Map 10: 0/1	Map 12: 0(+1)/1	Map 13: 0/1	Map 14: 0/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0(+1)/1	Map 10: 0/1	Map 12: 0(+1)/1	Map 13: 0/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0(+1)/1	Map 10: 0/1	Map 12: 0/1	Map 13: 0/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0(+1)/1	Map 10: 0/1	Map 12: 1/1	Map 13: 0(+1)/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 0(+1)/1	Map 10: 0/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 0/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 0(+1)/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 0(+1)/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0(+1)/1	Reducer 11: 0/2	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 0(+1)/1	Reducer 11: 0/1	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 1/1	Reducer 11: 0/1	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 0(+1)/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 1/1	Reducer 11: 0(+1)/1	Reducer 2: 0/2	Reducer 5: 0/2	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 1/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 1/1	Reducer 11: 1/1	Reducer 2: 0/2	Reducer 5: 0/1	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 1/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 1/1	Reducer 11: 1/1	Reducer 2: 0/2	Reducer 5: 0(+1)/1	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 0(+1)/1	Map 3: 0(+1)/1	Map 4: 1/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 9: 1/1	Reducer 11: 1/1	Reducer 2: 0/2	Reducer 5: 1/1	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 0(+1)/1	Map 4: 1/1	Map 6: 0(+1)/1	Map 7: 0(+1)/1 Map 9: 1/1	Reducer 11: 1/1	Reducer 2: 0/2	Reducer 5: 1/1	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 0(+1)/1	Map 4: 1/1	Map 6: 1/1	Map 7: 0(+1)/1	Map 9: 1/1	Reducer 11: 1/1	Reducer 2: 0/2	Reducer 5: 1/1	Reducer 8: 0/2	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 1/1	Map 4: 1/1	Map 6: 1/1	Map 7: 1/1	Map 9: 1/1 Reducer 11: 1/1	Reducer 2: 0/1	Reducer 5: 1/1	Reducer 8: 0/1	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 1/1	Map 4: 1/1	Map 6: 1/1	Map 7: 1/1	Map 9: 1/1 Reducer 11: 1/1	Reducer 2: 0(+1)/1	Reducer 5: 1/1	Reducer 8: 0(+1)/1	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 1/1	Map 4: 1/1	Map 6: 1/1	Map 7: 1/1	Map 9: 1/1 Reducer 11: 1/1	Reducer 2: 0(+1)/1	Reducer 5: 1/1	Reducer 8: 1/1	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 1/1	Map 4: 1/1	Map 6: 1/1	Map 7: 1/1	Map 9: 1/1 Reducer 11: 1/1	Reducer 2: 0(+1)/1	Reducer 5: 1/1	Reducer 8: 1/1	
+INFO : Map 1: 1/1	Map 10: 1/1	Map 12: 1/1	Map 13: 1/1	Map 14: 1/1	Map 3: 1/1	Map 4: 1/1	Map 6: 1/1	Map 7: 1/1	Map 9: 1/1 Reducer 11: 1/1	Reducer 2: 1/1	Reducer 5: 1/1	Reducer 8: 1/1	
+INFO : Moving data to directory hdfs://itfin105.it.zeb.de:8280/apps/hive/warehouse/geo_gentrification.db/result_full_distcalc_plr from hdfs://itfin105.it.zeb.de:8280/apps/hive/warehouse/geo_gentrification.db/.hive-staging_hive_2018-09-06_23-19-28_718_8746346155717057355-124/-ext-10002
+INFO : Table geo_gentrification.result_full_distcalc_plr stats: [numFiles=1, numRows=436, totalSize=4675376, rawDataSize=4674940]

@@ -1,0 +1,33 @@
+select tags["religion"], count(1) from osmnodes_latest where tags["amenity"] = "place_of_worship" group by tags["religion"];
+select tags["religion"], count(1) from osmnodes_latest where tags["amenity"] = "recycling";
+
+
+SELECT id, userid, latitude, longitude, getPlanungsraum(concat(latitude,", ",longitude)) FROM osmnodes where id = "N16541597";
+
+
+add jar hdfs:///user/esri/lormapper_run1b.jar;
+create temporary function getPlanungsraum as 'de.zeb.hive.udf.lormapper.Planungsraum';
+
+add jar hdfs:///user/esri/lormapper_run1c.jar;
+create function planungsraum as 'de.zeb.hive.udf.lormapper.Planungsraum' using jar 'hdfs:///user/esri/lormapper_run1c.jar';
+
+add jar hdfs://itfin105.it.zeb.de:8280/user/admin/dhelweg/lormapper_run1c.jar;
+CREATE TEMPORARY FUNCTION planungsraum AS 'de.zeb.hive.udf.lormapper.Planungsraum';
+create function planungsraum as 'de.zeb.hive.udf.lormapper.Planungsraum' using jar 'hdfs://itfin105.it.zeb.de:8280/user/admin/dhelweg/lormapper_run1c.jar';
+
+
+create function planungsraum as 'de.zeb.hive.udf.lormapper.Planungsraum' using jar 'hdfs://itfin105.it.zeb.de:8280/user/admin/dhelweg/lormapper_run1c.jar';
+
+
+select getPlanungsraum(concat(latitude,", ",longitude)) as lor, count(1) as anzahl , userid, tags["amenity"], tags["cuisine"]
+from osmnodes where userid = "290680" 
+group by  getPlanungsraum(concat(latitude,", ",longitude)), userid, tags["amenity"], tags["cuisine"] ;
+
+
+select coalesce(a.node_id,l.node_id) , coalesce(a.coords, l.coords),
+a.last_modification_time, l.last_modification_time
+ from osm_poi_2014 a full outer join osm_poi_latest l on a.node_id = l.node_id
+  where a.amenity is not null
+;
+
+osmosis --read-pbf "C:\dev\master\files Berlin\berlin-latest.osm.pbf" --node-key keyList="tourism,amenity,heritage,sport,leisure,office,atm,landuse,public_transport,shop"  --write-xml "C:\dev\master\files Berlin\result\filtered_latest.osm"

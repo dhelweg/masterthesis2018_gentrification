@@ -1,0 +1,45 @@
+01011102	Großer Tiergarten
+01022103	Westhafen
+02020201	Gleisdreieck/Entwicklungsgebiet
+03010104	Lietzengraben
+04020204	Olympiagelände
+04020314	Messegelände
+04041133	Güterbahnhof Grunewald
+04041239	Stadion Wilmersdorf
+04061757	Forst Grunewald
+09010102	Am Treptower Park Nord
+09020701	Adlershof West
+10010203	Gewerbegebiet Bitterfelder Straße
+12214528	Tegeler Forst
+
+
+<300
+	Großer Tiergarten, 
+	Westhafen, 
+	Gleisdreieck/Entwicklungsgebiet,
+	Lietzengraben, 
+	Olympiagelände, 
+	Messegelände, 
+	Güterbahnhof Grunewald, 
+	Stadion Wilmersdorf,
+	Forst Grunewald, 
+	Am Treptower Park Nord, 
+	Adlershof West, 
+	Gewerbegebiet Bitterfelder Str., 
+	Tegeler Forst,
+	Gewerbegebiet Köllnische Heide
+
+
+Außerdem wurden die LOR 
+	Herzbergstraße, 
+	Motardstr. 
+	
+bei der Analyse nicht berucksichtigt.36
+Fur Blankenburg und Blankenfelde standen keine immobilienwirtschaftlichen Daten für die
+Jahre 2007 und 2008 zur Verfügung. Herzbergstraße und Motardstr. gelten als Ausreißer bei
+den Umzugsraten und hatten die Analysen vezerrt
+
+
+
+
+außerdem bzr:
